@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container div {
+  width: 100px;
+  height: 100px;
+  background-color: greenyellow;
+  transition-property: width;
+  transition-duration: 4s;
+  margin: 10px;
+}
+
+.container div:hover {
+  width: 200px;
+}
+
+.container div span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#div1 {
+  transition-timing-function: linear;
+}
+
+#div2 {
+  transition-timing-function: steps(4, jump-start);
+}
+
+#div3 {
+  transition-timing-function: ease-in;
+}
+
+#div4 {
+  transition-timing-function: ease-out;
+}
+
+#div5 {
+  transition-timing-function: ease-in-out;
+}
